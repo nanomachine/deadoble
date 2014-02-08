@@ -1,4 +1,4 @@
-# myapp.rb
+# deadoble.rb
 
 require 'rubygems'
 
