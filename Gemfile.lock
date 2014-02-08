@@ -5,6 +5,11 @@ GEM
     daemons (1.1.9)
     eventmachine (1.0.3-x86-mingw32)
     excon (0.31.0)
+    faraday (0.8.9)
+      multipart-post (~> 1.2.0)
+    faraday_middleware (0.9.0)
+      faraday (>= 0.7.4, < 0.9)
+    hashie (2.0.5)
     heroku (3.3.0)
       heroku-api (~> 0.3.17)
       launchy (>= 0.3.2)
@@ -14,10 +19,16 @@ GEM
     heroku-api (0.3.17)
       excon (~> 0.27)
       multi_json (~> 1.8.2)
+    instagram (0.10.0)
+      faraday (>= 0.7, < 0.9)
+      faraday_middleware (~> 0.8)
+      hashie (>= 0.4.0)
+      multi_json (~> 1.0, >= 1.0.3)
     launchy (2.4.2)
       addressable (~> 2.3)
     mime-types (2.1)
     multi_json (1.8.4)
+    multipart-post (1.2.0)
     netrc (0.7.7)
     rack (1.5.2)
     rack-protection (1.5.2)
@@ -40,5 +51,6 @@ PLATFORMS
 
 DEPENDENCIES
   heroku
+  instagram
   sinatra
   thin
